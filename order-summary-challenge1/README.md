@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: (https://shanib-ibrahim.github.io/order-summary-challenge/)
+- Live Site URL: (https://shanib-ibrahim.github.io/Frontend-Mentor-Challenge/order-summary-challenge1/)
 
 
 ### Built with
@@ -99,4 +99,4 @@ The area i need to more focus and learn in CSS and HTML are:
 
 ## Acknowledgments
 
-I would recommend everyone thier to get start with frontend mentor Challenge as soon as possible.A good website for beginners to learn CSS and HTML. And for my journey in these challenge Muhammed from codingden helped me when i got stuck with some CSS logic.
+I would recommend everyone thier to get start with frontend mentor Challenge as soon as possible.A good website for beginners to learn CSS and HTML. And in my journey [Order summary card challenge on Frontend Mentor]  Muhammed from codingden helped me when i got stuck with some CSS logic.And also one of my other friend Muhammed Shuraif(https://github.com/shuraif) who is good with HTML ,CSS ,React and JAVA Spring Boot helped me all the time. Thanks to everyone who helped me.
