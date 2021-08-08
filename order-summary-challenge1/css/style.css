@@ -8,7 +8,7 @@
 }
 
 body {
-  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
   font-family: "Red Hat Display", sans-serif;
   font-weight: 500;
   color: hsl(223, 47%, 23%);
@@ -135,16 +135,14 @@ h1 {
 @media screen and (min-width: 1440px) {
   .bg-image {
     background-image: url("../images/pattern-background-desktop.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    margin: 80px auto 0 auto;
-    width: 60%;
-    height: 800px;
+    position: absolute;
+    top:-150px;
+    width: 100%;
+
   }
 
   .summary-section {
-    margin: 4.5rem auto 0 auto;
+    margin: 15rem auto 0 auto;
     left: 32%
   }
 
