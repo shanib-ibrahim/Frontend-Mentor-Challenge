@@ -14,16 +14,16 @@ body {
   color: hsl(223, 47%, 23%);
 }
 
-h1 {
-  margin: 30px auto 20px;
+h2 {
+  margin: 20px auto 20px;
 }
 
 /************************************id Selector******************************/
 #summary-description {
-  margin: 1.25rem auto;
-  width: 300px;
+  margin: 1rem auto;
+  width: 260px;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 
@@ -52,7 +52,7 @@ h1 {
 }
 
 .summary-section {
-  margin-top:1rem;
+  margin-top:3rem;
   text-align: center;
   background-color: white;
   border-radius: 20px;
@@ -133,16 +133,19 @@ h1 {
 
 /************************************Media Query******************************/
 @media screen and (min-width: 1440px) {
+  h2{
+    margin: 30px auto 20px;
+  }
   .bg-image {
     background-image: url("../images/pattern-background-desktop.svg");
     position: absolute;
-    top:-150px;
+    top:-10px;
     width: 100%;
 
   }
 
   .summary-section {
-    margin: 15rem auto 0 auto;
+    margin: 8rem auto 0 auto;
     left: 32%
   }
 
