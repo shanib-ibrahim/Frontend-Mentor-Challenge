@@ -1,0 +1,180 @@
+/************************************Tag Selector******************************/
+@import url("https://fonts.google.com/specimen/Red+Hat+Display");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-repeat: no-repeat;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  color: hsl(223, 47%, 23%);
+}
+
+h1 {
+  margin: 30px auto 20px;
+}
+
+/************************************id Selector******************************/
+#summary-description {
+  margin: 1.25rem auto;
+  width: 300px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+
+
+/************************************class Selector******************************/
+.bg-image {
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100vh;
+}
+.attribution {
+  margin-top:0.6rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.summary-section {
+  margin-top:1rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 320px;
+}
+
+.summary-image {
+  width: 320px;
+}
+
+.summary-plan {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.summary-plan-description {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  margin: auto auto auto 20px;
+}
+
+.summary-plan-description p {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.summary-plan a {
+  color: hsl(245, 75%, 52%);
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: auto auto auto 2rem;
+}
+
+.summary-plan a:hover {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.payment-btn {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8rem;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border-radius: 10px;
+  width: 80%;
+  height: 50px;
+  margin: auto;
+  padding: 15px;
+  box-shadow: 0 10px 20px hsla(245, 75%, 52%,0.3);
+}
+
+.payment-btn:hover {
+  background-color: hsl(245, 95%, 64%);
+  box-shadow: 0 10px 20px hsla(245, 95%, 64%,0.3);
+}
+
+.cancel-btn {
+  display: block;
+  width: 40%;
+  color: hsl(223, 47%, 23%);
+  text-decoration: none;
+  margin: 20px auto 30px auto;
+}
+
+.cancel-btn:hover {
+  font-weight: bold;
+  color: hsl(223, 47%, 23%);
+}
+
+/************************************Media Query******************************/
+@media screen and (min-width: 1440px) {
+  .bg-image {
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: 80px auto 0 auto;
+    width: 60%;
+    height: 800px;
+  }
+
+  .summary-section {
+    margin: 4.5rem auto 0 auto;
+    left: 32%
+  }
+
+  .attribution {
+    font-size: 15px;
+    bottom: 40px;
+    left: 40%;
+    margin: auto;
+
+  }
+  .summary-section {
+    width: 400px;
+  }
+  .summary-image {
+    width: 400px;
+  }
+  #summary-description{
+    font-size: 14.5px;
+    width: 280px;
+  }
+  .summary-plan {
+    margin: 40px 40px 30px 40px;
+    padding: 20px 20px;
+
+  }
+  .summary-plan a {
+    margin: auto auto auto 3rem;
+  }
+  .payment-btn {
+    margin: 5px auto 0 auto;
+
+  }
+}
