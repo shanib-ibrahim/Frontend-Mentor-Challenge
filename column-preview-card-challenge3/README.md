@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://shanib-ibrahim.github.io/Frontend-Mentor-Challenge/column-preview-card-challenge3/)
+- Live Site URL: [live site URL](https://shanib-ibrahim.github.io/Frontend-Mentor-Challenge/column-preview-card-challenge3/)
 
 ## My process
 
