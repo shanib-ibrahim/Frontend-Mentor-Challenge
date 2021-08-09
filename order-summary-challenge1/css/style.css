@@ -132,7 +132,7 @@ h2 {
 }
 
 /************************************Media Query******************************/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   h2{
     margin: 30px auto 20px;
   }
