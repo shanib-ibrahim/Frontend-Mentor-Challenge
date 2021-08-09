@@ -111,7 +111,7 @@ body {
 }
 
 /************************************Media Query******************************/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card {
     margin: 23vh auto 0 auto;
     width: 1000px;
