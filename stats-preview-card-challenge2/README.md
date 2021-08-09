@@ -29,11 +29,12 @@ Users should be able to:
 
 -1)Stats preview card desktop view
    [./design/stats-preview-card-desktop-view.png]
+   
 -2)Stats preview card mobile view
    [./design/stats-preview-card-mobile-view.png]
 ### Links
 
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://shanib-ibrahim.github.io/Frontend-Mentor-Challenge/stats-preview-card-challenge2/)
 
 ## My process
 
