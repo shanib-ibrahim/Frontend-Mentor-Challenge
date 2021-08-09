@@ -8,6 +8,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
+- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
@@ -38,6 +39,7 @@ Users should be able to:
 
 - Live Site URL: (https://shanib-ibrahim.github.io/Frontend-Mentor-Challenge/order-summary-challenge1/)
 
+## My process
 
 ### Built with
 
