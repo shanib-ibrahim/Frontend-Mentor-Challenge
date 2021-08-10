@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+/*********************************Tag Selector*********************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(227, 10%, 46%, 0.5);
+  font-weight: 400;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 53%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 3;
+}
+
+img {
+  border-radius: 50%;
+  position: absolute;
+  border: 5px solid white;
+  top: 20%;
+  left: 32%;
+}
+
+small {
+  letter-spacing: 2rpx;
+}
+
+h3 {
+  color: hsl(229, 23%, 23%);
+  margin-bottom: 2px;
+  font-weight: 900;
+}
+
+strong {
+  color: hsl(227, 10%, 46%, 0.5);
+  font-weight: normal;
+}
+
+hr {
+  border-color: hsl(227, 10%, 46%, 0.2);
+  border-width: 1px 0 0 0;
+  border-style: outset;
+  margin: 20px 0 20px 0;
+}
+
+label {
+  margin: 10px;
+}
+
+/*****************************Class Selector***********************************/
+.bg-top {
+  background-image: url("../images/bg-pattern-top.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -31rem;
+  top: -24rem;
+  height: 700px;
+  width: 700px;
+  z-index: 1;
+}
+
+.bg-bottom {
+  background-image: url("../images/bg-pattern-bottom.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30rem 23rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 700px;
+  width: 700px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  color: hsl(229, 23%, 23%);
+  margin: 20px auto 0 auto;
+  font-weight: 900;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  width: 320px;
+  height: 360px;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+
+}
+.card-header-bg {
+  background-image: url("../images/bg-pattern-card.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 125px;
+}
+
+.card-content ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.card-content>h3 {
+  margin: 75px 20px 10px 20px;
+}
+
+/************************************Media Query******************************/
+@media screen and (min-width: 1025px) {
+
+  .bg-top {
+    left: -15rem;
+    top: -31rem;
+    height: 1000px;
+    width: 1000px;
+  }
+  .bg-bottom {
+    background-position:0;
+    right: -15rem;
+    bottom: -35rem;
+    height: 1000px;
+    width: 1000px;
+
+  }
+  .card {
+    width: 350px;
+  }
+  img {
+    left: 35%;
+  }
+
+}
