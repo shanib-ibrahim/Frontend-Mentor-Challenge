@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL:(https://shanib-ibrahim.github.io/Frontend-Mentor-Challenge/social-proof-section-challenge5/
 
 ## My process
 
