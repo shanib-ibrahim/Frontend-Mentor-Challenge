@@ -12,6 +12,10 @@ body {
   font-weight: 400;
   font-size: 1rem;
   background-color: hsl(204, 43%, 93%);
+  position: absolute;
+  top:75%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }
 
 h5 {
@@ -41,7 +45,6 @@ ul{
   display: grid;
   width: 20rem;
   height: 53rem;
-  margin: 5rem auto 1rem auto;
   border-radius: 10px;
   background-color: #fff;
   overflow: hidden;
