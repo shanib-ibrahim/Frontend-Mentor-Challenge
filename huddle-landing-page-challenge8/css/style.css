@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*******************************Tag Selector***********************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+    min-height: 100%;
+}
+body {
+  background-color: hsl(257, 40%, 49%);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  background-image: url("../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #fff;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 150%;
+  margin-bottom: 5%;
+}
+
+span {
+  display: block;
+}
+
+p {
+  width: 80%;
+  margin: auto;
+}
+
+main {
+  margin-top:16%;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin: 0 1% 5%;
+  border: solid 1.8px #fff;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #fff;
+}
+
+li:hover {
+  color: hsl(300, 69%, 71%);
+  border: solid 2px hsl(300, 69%, 71%);
+}
+
+/*******************************Class Selector*********************************/
+/* Logo */
+.logo {
+  margin: 2rem 0 0 2rem;
+  width: 8rem;
+}
+
+/* huddle mockup imaghe */
+.mockup-image {
+  width: 80%;
+  margin-bottom: 4rem;
+}
+
+/* Huddle Content */
+.huddle-content {
+  text-align: center;
+}
+
+.btn {
+  background-color: #fff;
+  border-radius: 40px;
+  color: hsl(257, 40%, 49%);
+  width: 13.5rem;
+  padding: 0.5rem 0 0.5rem;
+  text-decoration: none;
+  font-size: 700;
+  margin: 1.5rem 0 3.5rem;
+}
+
+.btn:hover {
+  text-decoration: none;
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+/*********************************Media Query Desktop *************************/
+@media screen and (min-width: 992px) {
+  body {
+    background-image: url("../images/bg-desktop.svg");
+    background-size: cover;
+  }
+  h3 {
+    font-size: 200%;
+    line-height:1.7;
+
+  }
+  main {
+    margin-top:6%;
+  }
+  p {
+    width: 88%;
+    margin: 0;
+  }
+
+  ul {
+    position: absolute;
+    right: 3rem;
+    bottom: 2rem;
+  }
+
+  li {
+    margin: 0.2rem;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+
+  /* Logo */
+  .logo {
+    margin: 4rem 0 0 4rem;
+    width: 14rem;
+  }
+
+  .huddle-content {
+    text-align: left;
+    padding: 3% 0 0 14%;
+  }
+
+  .mockup-image {
+    width: 112%;
+    margin:1% 0 0 12%;
+  }
+  .btn {
+    width: 11.5rem;
+    padding: 0.7rem 0 0.7rem;
+
+  }
+}
