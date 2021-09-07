@@ -152,6 +152,10 @@ input[type=checkbox]:checked ~ .faq__collapse {
 }
 
 @media screen and (min-width: 1024px) {
+  body {
+    padding: 0;
+  }
+
   .faq {
     position: relative;
     display: flex;
@@ -159,8 +163,8 @@ input[type=checkbox]:checked ~ .faq__collapse {
     max-width: 56rem;
     padding: 4.375rem 6.25rem 4.375rem 0;
     background-image: url(../images/bg-pattern-desktop.svg);
-    background-size: 45%;
-    background-position: -13% center;
+    background-size: 95%;
+    background-position: left -32rem top -16rem;
   }
   .faq h1 {
     text-align: left;
