@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+// text colors
+$text-active: hsl(238, 29%, 16%);
+$text-primary: hsl(237, 12%, 33%);
+$text-secondary: hsl(240, 6%, 50%);
+
+//Hover colors
+$hover-color: hsl(14, 88%, 65%);
+
+//dividers color
+$divider-color: hsl(240, 5%, 91%);
+
+// font-size
+$font-size: 12px;
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+@mixin transition-ease($property) {
+    transition: $property 300ms ease-in-out;
+}
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}

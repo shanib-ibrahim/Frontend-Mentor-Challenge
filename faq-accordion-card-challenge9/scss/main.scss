@@ -1,0 +1,145 @@
+@import "config";
+
+/**************Tag Selector******************/
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 10rem 1.5rem 3rem;
+    font: 400 $font-size "Kumbh Sans", sans-serif;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    color: $text-primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input[type="checkbox"] {
+    display: none;
+}
+
+footer {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1rem;
+    a {
+        color: #fff;
+    }
+    a:hover {
+        @include transition-ease(all);
+        color: $hover-color;
+    }
+}
+
+/**************class Selector******************/
+
+/*FAQ*/
+.faq {
+    background: #ffffff;
+    border-radius: 1.5rem;
+    width: 100%;
+    min-width: 19rem;
+    max-width: 44rem;
+    padding: 2.875rem 1.5rem 3.5rem;
+    background-image: url("../images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 53% -1%;
+    background-size: 14rem;
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    &__box {
+        display: none;
+    }
+
+    &__image {
+        position: relative;
+        .faq__image--mobile {
+            position: absolute;
+            top: -9rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 15rem;
+        }
+        .faq__image--desktop {
+            display: none;
+        }
+    }
+    &__text {
+        padding-top: 5.5rem;
+    }
+
+    &__item {
+        padding-top: 1rem;
+        border-bottom: 1px solid $divider-color;
+        h2 {
+            margin-bottom: 0;
+        }
+    }
+
+    &__question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border: none;
+        background: transparent;
+        margin-bottom: 1rem;
+        padding: 0;
+        font-size: 0.875rem;
+        font-family: "Kumbh Sans", sans-serif;
+        font-weight: 400;
+        text-align: left;
+
+        &:hover {
+            color: $hover-color;
+            @include transition-ease(all);
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 0.625rem;
+            height: 1rem;
+            background-image: url("../images/icon-arrow-down.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            @include transition-ease(transform);
+        }
+    }
+    &__content {
+        display: none;
+        font-size: 0.75rem;
+        line-height: 1.4;
+        color: $text-secondary;
+        margin-bottom: 1rem;
+        width: 90%;
+    }
+    &__collapse {
+        height: 0;
+        overflow: hidden;
+        @include transition-ease(height);
+    }
+}
+input[type="checkbox"]:checked {
+    ~ h2 .faq__question {
+        font-weight: 700;
+    }
+    ~ h2 .faq__question::after {
+        transform: rotate(180deg);
+    }
+    ~ .faq__collapse .faq__content {
+        display: block;
+    }
+    ~ .faq__collapse {
+        height: 60px;
+    }
+}
+
+@import "responsive";

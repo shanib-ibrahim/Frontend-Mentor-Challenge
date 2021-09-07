@@ -1,0 +1,52 @@
+@include media-lg {
+    .faq {
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+        max-width: 56rem;
+        padding: 4.375rem 6.25rem 4.375rem 0;
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-size: 45%;
+        background-position: -13% center;
+        h1 {
+            text-align: left;
+        }
+
+        &__box {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 58%;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: 1;
+        }
+
+        &__image {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            .faq__image--desktop {
+                display: block;
+                position: relative;
+                top: auto;
+                left: auto;
+                max-width: 25rem;
+                transform: translateX(-4rem);
+            }
+            .faq__image--mobile {
+                display: none;
+            }
+        }
+        &__text {
+            flex: 1;
+            padding-top: 0;
+        }
+    }
+    input[type="checkbox"]:checked {
+        ~ .faq__collapse {
+            height: 50px;
+        }
+    }
+}
