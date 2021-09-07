@@ -1,4 +1,7 @@
 @include media-lg {
+    body {
+        padding: 0;
+    }
     .faq {
         position: relative;
         display: flex;
