@@ -7,6 +7,7 @@ body {
     padding: 10rem 1.5rem 3rem;
     font: 400 $font-size "Kumbh Sans", sans-serif;
     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
     color: $text-primary;
     display: flex;
     flex-direction: column;
@@ -42,8 +43,8 @@ footer {
     padding: 2.875rem 1.5rem 3.5rem;
     background-image: url("../images/bg-pattern-mobile.svg");
     background-repeat: no-repeat;
-    background-position: 53% -1%;
-    background-size: 14rem;
+    background-position: 45% -1%;
+    background-size: 13.8rem;
 
     h1 {
         font-size: 2rem;
@@ -59,7 +60,7 @@ footer {
         .faq__image--mobile {
             position: absolute;
             top: -9rem;
-            left: 50%;
+            left: 45%;
             transform: translateX(-50%);
             display: block;
             width: 100%;

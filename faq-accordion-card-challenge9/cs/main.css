@@ -23,6 +23,7 @@ body {
   padding: 10rem 1.5rem 3rem;
   font: 400 12px "Kumbh Sans", sans-serif;
   background-image: linear-gradient(#af67e9, #6565e7);
+  background-repeat: no-repeat;
   color: #4a4b5e;
   display: flex;
   flex-direction: column;
@@ -58,8 +59,8 @@ footer a:hover {
   padding: 2.875rem 1.5rem 3.5rem;
   background-image: url("../images/bg-pattern-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 53% -1%;
-  background-size: 14rem;
+  background-position: 45% -1%;
+  background-size: 13.8rem;
 }
 .faq h1 {
   font-size: 2rem;
@@ -75,7 +76,7 @@ footer a:hover {
 .faq__image .faq__image--mobile {
   position: absolute;
   top: -9rem;
-  left: 50%;
+  left: 45%;
   transform: translateX(-50%);
   display: block;
   width: 100%;

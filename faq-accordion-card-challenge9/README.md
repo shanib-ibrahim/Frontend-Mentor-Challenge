@@ -40,7 +40,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: (https://shanib-ibrahim.github.io/Frontend-Mentor-Challenge/faq-accordion-card-challenge9/)
+- Live Site URL:  (https://shanib-ibrahim.github.io/Frontend-Mentor-Challenge/faq-accordion-card-challenge9/)
 
 ## My process
 
