@@ -1,0 +1,39 @@
+@include media-lg {
+    main {
+        max-width: 890px;
+        flex-direction: row;
+    }
+    .header__image {
+        flex-basis: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: top left;
+    }
+    .main__content {
+        padding: 3rem 2rem 1rem 3rem;
+        position: static;
+        &--title {
+            font-size: 18px;
+        }
+        &--shareDetails {
+            width: 70%;
+            height: 3.5rem;
+            max-width: 250px;
+            border-radius: 0.8rem;
+            left: 40.38rem;
+            bottom: 6rem;
+            overflow: visible;
+        }
+    }
+    .arrow-down {
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $share-bg;
+        position: absolute;
+        bottom: -14px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}

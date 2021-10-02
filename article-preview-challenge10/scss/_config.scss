@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+//text color
+$primary-color: hsl(214, 17%, 51%);
+$secondary-color: hsl(212, 23%, 69%);
+
+//Background color
+$background-color: hsl(210, 46%, 95%);
+
+//font size
+$font-size: 13px;
+
+//sahre background color
+$share-bg: hsl(217, 19%, 35%);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    height: 100vh;
+}
+@mixin transition-ease($property) {
+    transition: $property 300ms ease-in-out;
+}
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}

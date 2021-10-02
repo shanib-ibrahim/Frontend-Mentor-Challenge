@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  height: 100vh;
+  color: #6d7f97;
+  background-color: #ecf2f8;
+}
+
+main {
+  background-color: #fff;
+  width: 88%;
+  max-width: 400px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+header {
+  background-size: cover;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.main__parent {
+  position: relative;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.header__image {
+  height: 210px;
+  background-image: url("../images/drawers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top -0.8rem;
+}
+
+.main__content {
+  padding: 2rem 2rem 0.8rem;
+  letter-spacing: 4;
+  position: relative;
+}
+.main__content--title {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  width: 96%;
+  line-height: 1.5;
+}
+.main__content--message {
+  color: #9eafc2;
+  margin-bottom: 1.5rem;
+  width: 96%;
+  line-height: 1.5;
+}
+.main__content--share {
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__content--shareProfile {
+  display: flex;
+  align-items: center;
+}
+.main__content--shareProfile img {
+  border-radius: 50%;
+  width: 50px;
+  margin-right: 0.5rem;
+}
+.main__content--shareProfile p {
+  font-weight: 700;
+}
+.main__content--shareProfile p span {
+  display: block;
+  color: #9eafc2;
+}
+.main__content--shareImage {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #ecf2f8;
+  cursor: pointer;
+  position: relative;
+  z-index: 4;
+}
+.main__content--shareImage img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.main__content--shareImage:hover, .main__content--shareImage:active {
+  background-color: #9eafc2;
+}
+.main__content--shareImage:hover img, .main__content--shareImage:active img {
+  filter: brightness(0) invert(1);
+}
+.main__content--shareDetails {
+  background-color: #48556a;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 4.6rem;
+  padding: 1rem 1rem 1rem 2rem;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  font-size: 12px;
+}
+.main__content--shareDetails p {
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: #9eafc2;
+}
+.main__content--shareDetails ul li {
+  display: inline-block;
+  margin-left: 0.8rem;
+}
+.main__content--shareDetails .social-icon {
+  transition: all 300ms ease-in-out;
+}
+.main__content--shareDetails .social-icon:hover,
+.main__content--shareDetails .social-icon:active {
+  mix-blend-mode: overlay;
+}
+
+.attribution {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+.active {
+  background-color: #9eafc2;
+}
+.active img {
+  filter: brightness(0) invert(1);
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 890px;
+    flex-direction: row;
+  }
+
+  .header__image {
+    flex-basis: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: top left;
+  }
+
+  .main__content {
+    padding: 3rem 2rem 1rem 3rem;
+    position: static;
+  }
+  .main__content--title {
+    font-size: 18px;
+  }
+  .main__content--shareDetails {
+    width: 70%;
+    height: 3.5rem;
+    max-width: 250px;
+    border-radius: 0.8rem;
+    left: 40.38rem;
+    bottom: 6rem;
+    overflow: visible;
+  }
+
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #48556a;
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
