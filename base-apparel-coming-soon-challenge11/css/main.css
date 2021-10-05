@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff5f5;
+}
+
+main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.apparel__content {
+  overflow: hidden;
+}
+.apparel__content--wrapper {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: [col-1-start] 100% [col-1-end];
+  grid-template-rows: [row-1-start] 10% [row-1-end row-2-start] 30% [row-2-end row-3-start] 50% [ROW-3-END];
+  grid-template-areas: "logo" "image" "description";
+  width: 100vw;
+  height: 100vh;
+}
+.apparel__content--wrapperLogo {
+  grid-area: logo;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.apparel__content--wrapperLogo img {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 6rem;
+}
+.apparel__content--wrapperDescription {
+  grid-area: description;
+  padding: 3rem 0;
+}
+.apparel__content--wrapperDescription--child1 {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  line-height: 1.2;
+  margin-bottom: 5%;
+}
+.apparel__content--wrapperDescription--child1 h1 {
+  width: 80%;
+  margin: 0 auto;
+}
+.apparel__content--wrapperDescription--child1 :nth-child(1) {
+  color: #ce9797;
+  font-weight: 300;
+}
+.apparel__content--wrapperDescription--child1 span {
+  display: block;
+  color: #413a3a;
+  font-weight: 600;
+}
+.apparel__content--wrapperDescription--child2 {
+  color: #ce9797;
+  line-height: 1.8;
+  font-weight: 400;
+  margin: 0 auto 10%;
+  width: 90%;
+}
+.apparel__content--wrapperDescription--child3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto 0.5rem auto;
+  padding: 0.2rem 0 0 1.5rem;
+  border-radius: 3rem;
+  color: #ce9797;
+  border: none;
+  border: 1px solid #ce9797;
+  position: relative;
+}
+.apparel__content--wrapperDescription--child3 .email {
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+.apparel__content--wrapperDescription--child3 .email::placeholder {
+  color: #ce9797;
+}
+.apparel__content--wrapperDescription--child3 .error {
+  position: absolute;
+  right: 90px;
+}
+.apparel__content--wrapperDescription--child3 .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  display: inline-block;
+  padding: 0.7rem 1.8rem;
+  border-radius: 2rem;
+  position: absolute;
+  right: -10px;
+  top: -1px;
+  transition: all 300ms ease-in-out;
+}
+.apparel__content--wrapperDescription--child3 .arrow:hover,
+.apparel__content--wrapperDescription--child3 .arrow:active {
+  background: linear-gradient(135deg, white, #ffc1c1);
+  box-shadow: #f8bfbf 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.apparel__content--wrapperImage {
+  grid-area: image;
+  width: 100%;
+  background: url("../images/hero-mobile.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.attribution {
+  font-size: 11px;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+.hidden {
+  display: none;
+}
+
+.error-msg {
+  font-size: 0.78rem;
+  color: #f96262;
+  margin-left: -5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    text-align: left;
+  }
+
+  .apparel__content {
+    background: url("../images/bg-pattern-desktop.svg") no-repeat;
+    background-size: 60%;
+  }
+  .apparel__content--wrapper {
+    grid-template-columns: [col-1-start] 60% [col-1-end col-2-start] 40% [col-2-end];
+    grid-template-rows: [row-1-start] 10% [row-1-end row-2-start] 90% [row-2-end row-3-start];
+    grid-template-areas: "logo image" "description image";
+  }
+  .apparel__content--wrapperLogo {
+    margin-top: 4rem;
+  }
+  .apparel__content--wrapperLogo img {
+    left: 20%;
+    width: 9rem;
+  }
+  .apparel__content--wrapperDescription {
+    margin-top: 4rem;
+    width: 60%;
+  }
+  .apparel__content--wrapperDescription--child1 {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+  }
+  .apparel__content--wrapperDescription--child1 h1 {
+    width: 75%;
+    margin: 0;
+  }
+  .apparel__content--wrapperDescription--child2 {
+    margin: 0 0 3rem;
+    width: 85%;
+  }
+  .apparel__content--wrapperDescription--child3 {
+    width: 70%;
+    margin: 0 0 0.5rem;
+  }
+  .apparel__content--wrapperDescription--child3 .arrow {
+    padding: 0.7rem 2.3rem;
+    border-radius: 2rem;
+  }
+  .apparel__content--wrapperImage {
+    background: url("../images/hero-desktop.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .error-msg {
+    margin-left: 2rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

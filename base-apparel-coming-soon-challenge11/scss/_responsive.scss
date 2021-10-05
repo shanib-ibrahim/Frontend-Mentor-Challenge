@@ -1,0 +1,56 @@
+@include media-lg {
+    body {
+        text-align: left;
+    }
+    .apparel__content {
+        background: url("../images/bg-pattern-desktop.svg") no-repeat;
+        background-size: 60%;
+        &--wrapper {
+            grid-template-columns: [col-1-start] 60% [col-1-end col-2-start] 40% [col-2-end];
+            grid-template-rows: [row-1-start] 10% [row-1-end row-2-start] 90%[row-2-end row-3-start];
+            grid-template-areas:
+                "logo image"
+                "description image";
+
+            &Logo {
+                margin-top: 4rem;
+                img {
+                    left: 20%;
+                    width: 9rem;
+                }
+            }
+            &Description {
+                margin-top: 4rem;
+                width: 60%;
+                &--child1 {
+                    font-size: 3rem;
+                    letter-spacing: 1rem;
+                    h1 {
+                        width: 75%;
+                        margin: 0;
+                    }
+                }
+                &--child2 {
+                    margin: 0 0 3rem;
+                    width: 85%;
+                }
+                &--child3 {
+                    width: 70%;
+                    margin: 0 0 0.5rem;
+                    .arrow {
+                        padding: 0.7rem 2.3rem;
+                        border-radius: 2rem;
+                    }
+                }
+            }
+            &Image {
+                background: url("../images/hero-desktop.jpg") no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+    .error-msg {
+        margin-left: 2rem;
+    }
+} ;

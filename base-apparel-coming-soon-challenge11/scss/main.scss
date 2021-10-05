@@ -1,0 +1,152 @@
+@import "config";
+//-------------------------Tag Selector---------------------------------------
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: $fontSize;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: hsl(0, 100%, 98%);
+}
+main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+//-------------------------class selector-------------------------------------
+.apparel__content {
+    overflow: hidden;
+    &--wrapper {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: [col-1-start] 100% [col-1-end ];
+        grid-template-rows: [row-1-start] 10% [row-1-end row-2-start] 30%[row-2-end row-3-start] 50% [ROW-3-END];
+        grid-template-areas:
+            "logo"
+            "image"
+            "description";
+
+        width: 100vw;
+        height: 100vh;
+        &Logo {
+            grid-area: logo;
+            display: inline-block;
+            width: 100%;
+            position: relative;
+            img {
+                position: absolute;
+                left: 10%;
+                top: 50%;
+                transform: translate(0, -50%);
+                width: 6rem;
+            }
+        }
+        &Description {
+            grid-area: description;
+            padding: 3rem 0;
+            &--child1 {
+                font-size: 1.7rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5rem;
+                line-height: 1.2;
+                margin-bottom: 5%;
+                h1 {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+
+                :nth-child(1) {
+                    color: $Desaturated-red;
+                    font-weight: 300;
+                }
+                span {
+                    display: block;
+                    color: $grayish-red;
+                    font-weight: 600;
+                }
+            }
+            &--child2 {
+                color: $Desaturated-red;
+                line-height: 1.8;
+                font-weight: 400;
+                margin: 0 auto 10%;
+                width: 90%;
+            }
+            &--child3 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 300px;
+                margin: 0 auto 0.5rem auto;
+                padding: 0.2rem 0 0 1.5rem;
+                border-radius: 3rem;
+                color: $Desaturated-red;
+                border: none;
+                border: 1px solid $Desaturated-red;
+                position: relative;
+                .email {
+                    padding: 0.8rem;
+                    font-size: 0.9rem;
+                    border: none;
+                    background-color: transparent;
+                    resize: none;
+                    outline: none;
+                }
+                .email::placeholder {
+                    color: $Desaturated-red;
+                }
+                .error {
+                    position: absolute;
+                    right: 90px;
+                }
+                .arrow {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+                    display: inline-block;
+                    padding: 0.7rem 1.8rem;
+                    border-radius: 2rem;
+                    position: absolute;
+                    right: -10px;
+                    top: -1px;
+                    @include transition-ease(all);
+                }
+                .arrow:hover,
+                .arrow:active {
+                    background: linear-gradient(135deg, hsl(0, 0%, 100%), #ffc1c1);
+                    box-shadow: hsl(0, 80%, 86%) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                }
+            }
+        }
+        &Image {
+            grid-area: image;
+            width: 100%;
+            background: url("../images/hero-mobile.jpg") no-repeat;
+            background-size: cover;
+            overflow: hidden;
+        }
+    }
+}
+.attribution {
+    font-size: 11px;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+.hidden {
+    display: none;
+}
+.error-msg {
+    font-size: 0.78rem;
+    color: $Soft-red;
+    margin-left: -5rem;
+}
+
+@import "responsive";
