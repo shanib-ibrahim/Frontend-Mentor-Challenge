@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/shanib-ibrahim/Frontend-Mentor-Challenge/edit/main/article-preview-challenge10)
+- Live Site URL: (https://shanib-ibrahim.github.io/Frontend-Mentor-Challenge/article-preview-challenge10/)
 
 ## My process
 
