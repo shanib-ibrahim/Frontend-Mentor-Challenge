@@ -119,6 +119,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   display: inline-block;
   padding: 0.7rem 2rem;
