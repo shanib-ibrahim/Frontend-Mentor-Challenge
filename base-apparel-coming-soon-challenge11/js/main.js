@@ -22,12 +22,17 @@ arrowButton.addEventListener("click", function () {
     errorIcon.classList.remove("hidden");
     errorMessage.classList.remove("hidden");
     errorMessage.textContent = "Please enter email address";
-    emailTextBox.style.border = "2px solid hsl(0, 93%, 68%)";
+    emailTextBox.style.border = "none";
+    emailTextBox.style.borderLeft = "2px solid hsl(0, 93%, 68%)";
+    emailTextBox.style.borderTop = "2px solid hsl(0, 93%, 68%)";
+    emailTextBox.style.borderBottom = "2px solid hsl(0, 93%, 68%)";
   } else if (!validateEmail(email.value)) {
     errorIcon.classList.remove("hidden");
     errorMessage.classList.remove("hidden");
     errorMessage.textContent = "Please Provide a valid email";
-    emailTextBox.style.border = "2px solid hsl(0, 93%, 68%)";
+    emailTextBox.style.borderLeft = "2px solid hsl(0, 93%, 68%)";
+    emailTextBox.style.borderTop = "2px solid hsl(0, 93%, 68%)";
+    emailTextBox.style.borderBottom = "2px solid hsl(0, 93%, 68%)";
   }
 });
 
@@ -36,5 +41,8 @@ email.addEventListener("keydown", function () {
   arrowButton.style.boxShadow = "";
   errorIcon.classList.add("hidden");
   errorMessage.classList.add("hidden");
-  emailTextBox.style.border = "1px solid hsl(0, 6%, 24%)";
+  emailTextBox.style.border = "none";
+  emailTextBox.style.borderLeft = "1px solid hsl(0, 6%, 24%)";
+  emailTextBox.style.borderTop = "1px solid hsl(0, 6%, 24%)";
+  emailTextBox.style.borderBottom = "1px solid hsl(0, 6%, 24%)";
 });
