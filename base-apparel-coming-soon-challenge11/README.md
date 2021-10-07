@@ -16,8 +16,6 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-
-
 ## Overview
 
 ### The challenge
@@ -138,7 +136,7 @@ The area i need to more focus and learn in SASS, HTML and Bootstrap are:
 1)Sass Functions
 2)Mixins
 3)pseudo-elements
-4)HTML Semantic where i need to use it
+4)Semantic HTML where i need to use it
 5)ampersand
 6)grid
 7)Modern Javascript
