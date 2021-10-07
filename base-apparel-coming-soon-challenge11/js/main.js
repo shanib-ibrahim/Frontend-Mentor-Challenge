@@ -33,6 +33,9 @@ arrowButton.addEventListener("click", function () {
     emailTextBox.style.borderLeft = "2px solid hsl(0, 93%, 68%)";
     emailTextBox.style.borderTop = "2px solid hsl(0, 93%, 68%)";
     emailTextBox.style.borderBottom = "2px solid hsl(0, 93%, 68%)";
+  } else {
+    window.location.reload(false);
+    email.value = "";
   }
 });
 

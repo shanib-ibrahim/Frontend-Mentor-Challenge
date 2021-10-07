@@ -137,7 +137,8 @@ main {
 .apparel__content--wrapperImage {
   grid-area: image;
   width: 100%;
-  background: url("../images/hero-mobile.jpg") no-repeat;
+  background-image: url("../images/hero-mobile.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 }
