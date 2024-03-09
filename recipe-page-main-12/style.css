@@ -17,20 +17,30 @@ body {
   display: flex;
   flex-direction: column;
   background-color: hsl(0, 0%, 100%);
-  width: 40rem;
+  width: 37rem;
   padding: 2rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
 }
 .hero {
   border-radius: 1rem;
-  overflow: hidden;
-}
-.hero img {
-  width: 40rem;
+  background-image: url("/assets/images/image-omelette.jpeg");
+  width: 32.8rem;
   height: 15rem;
+  background-size: contain;
+  margin-bottom: 2rem;
 }
 .cookTime {
   background-color: hsl(330, 100%, 98%);
   padding: 2rem;
+}
+.main {
+  color: hsl(24, 5%, 18%);
+}
+.main h1 {
+  font-family: "outfit 700";
+}
+.main p {
+  margin-top: 1.2rem;
+  font-family: "outfit";
 }
