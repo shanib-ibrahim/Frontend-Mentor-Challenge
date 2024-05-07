@@ -1,0 +1,9 @@
+@media (max-width: 420px) {
+  .card {
+    width: 20.438rem;
+
+    > .card-content h1 {
+      font-size: 1.4rem;
+    }
+  }
+}
