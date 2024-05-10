@@ -41,13 +41,13 @@ While working on these challenge i have learned flexbox, positions and HTML Sema
 
 ```html
 <main role="main">
-  <section class="card" role="card">
-    <section class="card-image" role="card image"></section>
+  <section class="card">
+    <section class="card-image"></section>
     <section class="card-head"><p>Learning</p></section>
-    <section class="card-date" role="card date">
+    <section class="card-date">
       <p>Published 21 Dec 2023</p>
     </section>
-    <section class="card-content" role="card content">
+    <section class="card-content">
       <h1>HTML & CSS foundations</h1>
       <p>
         These languages are the backbone of every website, defining structure,
