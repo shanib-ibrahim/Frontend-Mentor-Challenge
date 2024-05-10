@@ -19,13 +19,13 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![Desktop Preview](preview/Desktop-Preview.png)
-![Mobile Preview](preview/Mobile-Preview.png)
+![Desktop Preview](preview/desktop-preview.png)
+![Mobile Preview](preview/mobile-preview.png)
 
 ### Links
 
-- Solution URL: [Qr-code-solution](https://github.com/shanib-ibrahim/Frontend-Mentor-Challenge/tree/main/qr-code-component)
-- Live Site URL: [Qr-code-live](https://shanib-ibrahim.github.io/Frontend-Mentor-Challenge/qr-code-component/)
+- Solution URL: [Qr-code-solution](https://github.com/shanib-ibrahim/Frontend-Mentor-Challenge/tree/main/blog-preview-card-main)
+- Live Site URL: [Qr-code-live](https://shanib-ibrahim.github.io/Frontend-Mentor-Challenge/blog-preview-card-main/)
 
 ## My process
 
@@ -40,43 +40,38 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 While working on these challenge i have learned flexbox, positions and HTML Semantic element .
 
 ```html
-<div class="main">
-  <img src="./images/image-qr-code.png" alt="Qr-Code" />
-  <h2>Improve your front-end skills by building projects</h2>
-  <p>
-    Scan the QR code to visit Frontend Mentor and take your coding skills to the
-    next level
-  </p>
-</div>
+<main role="main">
+  <section class="card" role="card">
+    <section class="card-image" role="card image"></section>
+    <section class="card-head"><p>Learning</p></section>
+    <section class="card-date" role="card date">
+      <p>Published 21 Dec 2023</p>
+    </section>
+    <section class="card-content" role="card content">
+      <h1>HTML & CSS foundations</h1>
+      <p>
+        These languages are the backbone of every website, defining structure,
+        content, and presentation.
+      </p>
+    </section>
+    <section class="profile">
+      <section class="profile-image">
+        <img src="./assets/images/image-avatar.webp" alt="profile image" />
+      </section>
+      <section class="profile-name">Greg Hooper</section>
+    </section>
+  </section>
+</main>
 ```
 
 ```css
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 320px;
-  height: 497px;
-  border-radius: 20px;
-  text-align: center;
-  background-color: var(--color-white);
-  margin-bottom: 10px;
-  padding: 1rem;
+@media (max-width: 420px) {
+  .card {
+    width: 20.438rem;
 
-  > img {
-    max-width: 100%;
-    height: 288px;
-    aspect-ratio: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  > h2 {
-    color: hsl(218, 44%, 22%);
-  }
-  > p {
-    margin-top: 5px;
-    padding: 1rem;
-    color: hsl(220, 15%, 55%);
+    > .card-content h1 {
+      font-size: 1.4rem;
+    }
   }
 }
 ```
