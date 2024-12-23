@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: hsl(0, 0%, 100%);
-  width: 37rem;
+  width: 44rem;
   padding: 2rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
@@ -25,9 +25,9 @@ body {
 .hero {
   border-radius: 1rem;
   background-image: url("/assets/images/image-omelette.jpeg");
-  width: 32.8rem;
-  height: 15rem;
-  background-size: contain;
+  height: 18rem;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-bottom: 2rem;
 }
 .cookTime {
@@ -38,9 +38,28 @@ body {
   color: hsl(24, 5%, 18%);
 }
 .main h1 {
-  font-family: "outfit 700";
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .main p {
   margin-top: 1.2rem;
   font-family: "outfit";
+  color: hsl(30, 10%, 34%);
+}
+
+.cookTime{
+  background-color: hsl(330, 100%, 98%) ; 
+  font-family: "Outfit", serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+}
+.cookTime h4{
+  color: hsl(332, 51%, 32%);
+}
+.cookTime li span{
+  color: hsl(24, 5%, 18%);font-weight: bold;
+
 }
