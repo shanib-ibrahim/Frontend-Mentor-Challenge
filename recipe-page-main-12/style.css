@@ -1,10 +1,15 @@
+/* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Universal Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Body Styling */
 body {
   background-color: hsl(30, 54%, 90%);
   display: flex;
@@ -13,163 +18,182 @@ body {
   align-items: center;
   padding: 5rem 10rem;
   font-family: "Outfit", serif;
-  font-size: 16px;
-
+  font-size: 1rem; /* 16px for easier scaling */
+  color: hsl(24, 5%, 18%);
 }
-h2{
-  font-size: 24px;    
+
+/* Header Styling */
+h1, h2 {
+  color: hsl(14, 45%, 36%);
+}
+
+h1 {
   font-family: "Young Serif", serif;
   font-weight: 400;
-  font-style: normal;
-  color: hsl(14, 45%, 36%);
-  margin-bottom: 14px;
-
 }
+
+h2 {
+  font-size: 1.5rem;  /* 24px */
+  margin-bottom: 0.875rem;  /* 14px */
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Paragraphs */
+p {
+  color: hsl(30, 10%, 34%);
+  font-family: "Outfit", sans-serif;
+  margin-bottom: 1rem;
+}
+
+/* List Styling */
 ul {
-  list-style-type: none; 
-  padding-left: 0;
-  margin-left: 10px; 
   list-style: none;
+  padding-left: 0;
+  margin-left: 10px;
 }
 
 ul li {
-  position: relative; 
-  padding-left: 20px; 
-  margin-bottom: 10px;
-
+  position: relative;
+  padding-left: 1.25rem;  /* 20px */
+  margin-bottom: 0.625rem;  /* 10px */
 }
 
 ul li::before {
-  content: '•'; 
-  font-size: 18px; 
-  position: absolute; 
-  left: -4px;
-  top: 50%; 
-  transform: translateY(-50%); 
+  content: '•';
+  font-size: 1.125rem;  /* 18px */
+  position: absolute;
+  left: -0.25rem;  /* -4px */
+  top: 50%;
+  transform: translateY(-50%);
 }
 
+/* Horizontal Rule */
 hr {
-    border-top: 1px solid #ccc; 
-    opacity: 0.5; 
-    width: 98%;
-    margin: auto;
-    height: 1px;
+  border-top: 1px solid #ccc;
+  opacity: 0.5;
+  width: 98%;
+  margin: 1rem auto;
+  height: 1px;
 }
 
-
-
-/* CARD SECTION*/
+/* Card Section */
 .card {
   display: flex;
   flex-direction: column;
-  background-color: hsl(0, 0%, 100%);
+  background-color: #fff;
   width: 44rem;
   padding: 2rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
 }
 
-
-/* HEOR IMAGE SECTION*/
+/* Hero Image */
 .hero {
   border-radius: 1rem;
   background-image: url("/assets/images/image-omelette.jpeg");
   height: 18rem;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
   margin-bottom: 2rem;
 }
 
-/* MAIN SECTION */
+/* Main Content Section */
 .main {
-  color: hsl(24, 5%, 18%);
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-.main h1 {
-  font-family: "Young Serif", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.main p {
-  font-family: "outfit";
-  color: hsl(30, 10%, 34%);
+  gap: 1.25rem;  /* 20px */
 }
 
-
-/* COOKING TIME SECTION */
+/* Cooking Time Section */
 .cookTime {
   background-color: hsl(330, 100%, 98%);
   padding: 2rem;
-}
-
-.cookTime{
-  background-color: hsl(330, 100%, 98%) ; 
-
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;  /* 10px */
   border-radius: 10px;
 }
-.cookTime h4{
-  font-size: 18px;
+
+.cookTime h4 {
+  font-size: 1.125rem;  /* 18px */
   color: hsl(332, 51%, 32%);
-  margin-bottom: 10px;
-}
-.cookTime li span{
-  color: hsl(24, 5%, 18%);font-weight: bold;
-
+  margin-bottom: 0.625rem;  /* 10px */
 }
 
-/* INGREDIENTS SECTION */
-
-
-/* INSTRUCTIONS SECTION */
-.instructions{ 
-  font-family: "outfit";
-
-  
-  ol li::marker {
-    color: hsl(332, 51%, 32%); ;
-    font-weight: bold; 
-  }
-  
-  ol li {
-    padding-left: 16px; 
-    margin-left: 24px;
-    margin-bottom: 12px;
-  }
-  li span{
-    font-weight: bold;
-  }
+.cookTime li span {
+  color: hsl(24, 5%, 18%);
+  font-weight: bold;
 }
 
-/* NUTRITION SECTION */
-.nutrition{
-  p{
-    margin-bottom: 12px;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse; 
-  }
-  
-  tr {
-    border-bottom: 1px solid #ddd; 
-  }
-
-  td{
-    padding-bottom: 15px;
-    padding-top: 15px;
-    padding-left: 20px;
-  }
-  
-  tr:last-child {
-    border-bottom: none; 
-  }
-  td:nth-child(2) {
-    color: hsl(332, 51%, 32%); 
-  }
+/* Instructions Section */
+.instructions {
+  font-family: "Outfit", sans-serif;
 }
 
+.instructions ol {
+  padding-left: 0;
+  margin-left: 1.5rem;  /* 24px */
+}
+
+.instructions ol li {
+  padding-left: 1rem;  /* 16px */
+  margin-bottom: 0.75rem;  /* 12px */
+}
+
+.instructions ol li::marker {
+  color: hsl(332, 51%, 32%);
+  font-weight: bold;
+}
+
+.instructions li span {
+  font-weight: bold;
+}
+
+/* Nutrition Section */
+.nutrition {
+  margin-top: 1rem;
+}
+
+.nutrition p {
+  margin-bottom: 0.75rem;  /* 12px */
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.nutrition td {
+  padding: 1rem 1.25rem;  /* 15px 20px */
+}
+
+.nutrition tr:last-child {
+  border-bottom: none;
+}
+
+.nutrition td:nth-child(2) {
+  color: hsl(332, 51%, 32%);
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  font-size: 0.75rem;  /* 12px */
+  color: #777;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: hsl(332, 51%, 32%);
+}
