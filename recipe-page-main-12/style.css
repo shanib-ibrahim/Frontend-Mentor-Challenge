@@ -16,6 +16,15 @@ body {
   font-size: 16px;
 
 }
+h2{
+  font-size: 24px;    
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 14px;
+
+}
 ul {
   list-style-type: none; 
   padding-left: 0;
@@ -38,6 +47,18 @@ ul li::before {
   top: 50%; 
   transform: translateY(-50%); 
 }
+
+hr {
+    border-top: 1px solid #ccc; 
+    opacity: 0.5; 
+    width: 98%;
+    margin: auto;
+    height: 1px;
+}
+
+
+
+/* CARD SECTION*/
 .card {
   display: flex;
   flex-direction: column;
@@ -47,6 +68,9 @@ ul li::before {
   border-radius: 1rem;
   margin-bottom: 2rem;
 }
+
+
+/* HEOR IMAGE SECTION*/
 .hero {
   border-radius: 1rem;
   background-image: url("/assets/images/image-omelette.jpeg");
@@ -55,10 +79,8 @@ ul li::before {
   background-repeat: no-repeat;
   margin-bottom: 2rem;
 }
-.cookTime {
-  background-color: hsl(330, 100%, 98%);
-  padding: 2rem;
-}
+
+/* MAIN SECTION */
 .main {
   color: hsl(24, 5%, 18%);
   display: flex;
@@ -73,6 +95,13 @@ ul li::before {
 .main p {
   font-family: "outfit";
   color: hsl(30, 10%, 34%);
+}
+
+
+/* COOKING TIME SECTION */
+.cookTime {
+  background-color: hsl(330, 100%, 98%);
+  padding: 2rem;
 }
 
 .cookTime{
@@ -92,13 +121,55 @@ ul li::before {
   color: hsl(24, 5%, 18%);font-weight: bold;
 
 }
-.ingredients{
-  h2{
-   font-size: 24px;
-   font-family: "Young Serif", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: hsl(14, 45%, 36%);
-  margin-bottom: 14px;
+
+/* INGREDIENTS SECTION */
+
+
+/* INSTRUCTIONS SECTION */
+.instructions{ 
+  font-family: "outfit";
+
+  
+  ol li::marker {
+    color: hsl(332, 51%, 32%); ;
+    font-weight: bold; 
+  }
+  
+  ol li {
+    padding-left: 16px; 
+    margin-left: 24px;
+    margin-bottom: 12px;
+  }
+  li span{
+    font-weight: bold;
   }
 }
+
+/* NUTRITION SECTION */
+.nutrition{
+  p{
+    margin-bottom: 12px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse; 
+  }
+  
+  tr {
+    border-bottom: 1px solid #ddd; 
+  }
+
+  td{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 20px;
+  }
+  
+  tr:last-child {
+    border-bottom: none; 
+  }
+  td:nth-child(2) {
+    color: hsl(332, 51%, 32%); 
+  }
+}
+
