@@ -12,6 +12,31 @@ body {
   justify-content: center;
   align-items: center;
   padding: 5rem 10rem;
+  font-family: "Outfit", serif;
+  font-size: 16px;
+
+}
+ul {
+  list-style-type: none; 
+  padding-left: 0;
+  margin-left: 10px; 
+  list-style: none;
+}
+
+ul li {
+  position: relative; 
+  padding-left: 20px; 
+  margin-bottom: 10px;
+
+}
+
+ul li::before {
+  content: '•'; 
+  font-size: 18px; 
+  position: absolute; 
+  left: -4px;
+  top: 50%; 
+  transform: translateY(-50%); 
 }
 .card {
   display: flex;
@@ -36,6 +61,9 @@ body {
 }
 .main {
   color: hsl(24, 5%, 18%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .main h1 {
   font-family: "Young Serif", serif;
@@ -43,23 +71,34 @@ body {
   font-style: normal;
 }
 .main p {
-  margin-top: 1.2rem;
   font-family: "outfit";
   color: hsl(30, 10%, 34%);
 }
 
 .cookTime{
   background-color: hsl(330, 100%, 98%) ; 
-  font-family: "Outfit", serif;
+
   display: flex;
   flex-direction: column;
   gap: 10px;
   border-radius: 10px;
 }
 .cookTime h4{
+  font-size: 18px;
   color: hsl(332, 51%, 32%);
+  margin-bottom: 10px;
 }
 .cookTime li span{
   color: hsl(24, 5%, 18%);font-weight: bold;
 
+}
+.ingredients{
+  h2{
+   font-size: 24px;
+   font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 14px;
+  }
 }
