@@ -23,7 +23,7 @@ body {
 }
 
 /* Header Styling */
-h1, h2 {
+h2 {
   color: hsl(14, 45%, 36%);
 }
 
@@ -33,10 +33,13 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;  /* 24px */
+  font-size: 1.6rem;  /* 24px */
   margin-bottom: 0.875rem;  /* 14px */
   font-weight: 400;
+  font-family: "Young Serif", serif;
   font-style: normal;
+  font-weight: 500;
+
 }
 
 /* Paragraphs */
@@ -183,13 +186,13 @@ hr {
 /* Footer Styling */
 footer {
   text-align: center;
-  font-size: 0.75rem;  /* 12px */
   color: #777;
   margin-top: 2rem;
 }
 
 footer a {
   color: hsl(228, 45%, 44%);
+  font-size: 0.8rem;  /* 12px */
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -197,3 +200,5 @@ footer a {
 footer a:hover {
   color: hsl(332, 51%, 32%);
 }
+
+
