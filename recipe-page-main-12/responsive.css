@@ -10,7 +10,13 @@
     width: 100%;
    }
     .hero{
-      border-radius: 0;      
+        height: 10rem;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      background-position: top;
+      margin-bottom: 2rem;
+      border-radius: 0;
     }
     main{
     padding: 0 1.5rem;
